@@ -5,6 +5,6 @@
 
 list=$(ls -p | grep -v '/\|^\.')
 
-for a in list; do
+for a in $list; do
 echo "$a" | cut -d '-' -f2
 done
